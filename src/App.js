@@ -9,6 +9,7 @@ import Ejemplo1 from './hooks/Ejemplo1';
 import Ejemplo2 from './hooks/Ejemplo2';
 import MiComponenteConContexto from './hooks/Ejemplo3';
 import Ejemplo4 from './hooks/Ejemplo4';
+import GreetingStyles from './components/pure/greetingStyles';
 
 function App() {
   return (
@@ -19,15 +20,16 @@ function App() {
         {/*<GreetingF name="Andrew"/>*/}
         {/*<FirstComponent></FirstComponent>*/}
         {/* Componente de Listado de tareas */}
-        {/*<TaskListComponent></TaskListComponent>*/}
+        {/* <TaskListComponent></TaskListComponent> */}
         {/* <Ejemplo2></Ejemplo2> */}
-        <MiComponenteConContexto></MiComponenteConContexto>
+        {/*Todo lo que hay aca adentro es tratado como el props.children */}
+        {/* <MiComponenteConContexto></MiComponenteConContexto>
         <Ejemplo4 nombre="Martin">
-          {/*Todo lo que hay aca adentro es tratado como el props.children */}
           <h3>
             Contenido del props.children
           </h3>
-        </Ejemplo4>
+        </Ejemplo4> */}
+        <GreetingStyles name='Eitan'></GreetingStyles>
       </header>
     </div>
     
